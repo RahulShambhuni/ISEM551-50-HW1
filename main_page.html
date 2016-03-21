@@ -1,0 +1,138 @@
+<!DOCTYPE>
+
+<html>
+	<head>
+		<style type="text/css">
+		.icons {
+			color: black;
+    		font-weight: bold;	
+    		background-color: grey;
+    		width: 120px;
+    		height: 60px;
+    		text-align: center;
+    		float: left;
+		}
+		.icons > p { 
+			text-align: center;
+			height: 30px; 
+			vertical-align: middle; 
+			word-wrap: break-word;
+		}
+		.icons:hover {
+			color: #FFFFFF;
+		}
+		#offers {
+			left: 10%;
+			position: relative;
+
+		}
+		#electronics {
+			left: 20%;
+			position: relative;
+		}
+		#fashions_and_lifes {
+			left: 30%;
+			position: relative;
+		}
+		#books_and_music {
+			left: 40%;
+			position: relative;
+		}
+		#trending_now {
+			left: 50%;
+			position: relative;	
+		}
+		div.desc {
+           padding: 20px;
+           text-align: center;
+        }
+		</style>
+	</head>
+	
+	
+	<script>
+			function loginClick() {
+				var name = document.getElementById("username");
+				var pwd = document.getElementById("password");
+				valid = true;
+				if(name.value == "") {
+					alert("UserName should not be empty")
+					valid = false;
+					name.focus()
+				}else if(pwd.value == "") {
+					alert("Password should not be empty")
+					valid = false;
+					pwd.focus()
+				}else if(pwd.value == name.value) {
+					alert("Username and Password should not be same")
+					valid = false;
+					name.focus()
+				}
+				if(valid == true) {
+					alert("Login Successful")
+				}
+			}
+		</script>
+		
+	<title>
+		Home Page
+	</title>
+
+	<body>
+		<h1 align="center">Main Page</h1>
+
+		<table width="100%" hieght="70px">
+			<tr>
+				<td><a href="New User Info.html">New Users - Register here</a></td>
+				<form action="redirect.html">
+				<td>
+					<table width="100%">
+						<tr align="right">
+							<td>LoginId : <input type="text" name="username" value="Mickey"></td>
+						</tr>
+						<tr align="right">
+							<td>Password : <input type="password" name="password" value="Mouse"></td>
+						</tr>
+						<tr align="right">
+							<td><input type="Submit" value="Login" ></td>
+						</tr>
+					</table>
+				</td>
+				</form> 
+			</tr>
+		</table>
+		<br/><br/><br/><br/>
+		<div width="100%" style="overflow : hidden">
+			<a href="offers.html">
+				<div class="icons" id = "offers">
+					<p>Offers</p>
+				</div>
+			</a>
+			<a href="electronics.html">
+				<div class="icons" id="electronics">
+					<p>Electronics</p>
+				</div>
+			</a>
+			<a href="fashions_and_lifes.html">
+				<div class="icons" id="fashions_and_lifes">
+					<p>Fashions and Lifes</p>
+				</div>
+			</a>
+			<a href="books_and_music.html">
+				<div class="icons" id="books_and_music">
+					<p>Books and Music</p>
+				</div>
+			</a>
+			<a href="trending_now.html">
+				<div class="icons" id="trending_now">
+					<p>Trending Now</p>
+				</div>
+			</a>
+		</div>
+		
+		<br> <br> <br><div class="desc"><b> PLEASE CLICK ON TABS</div>
+		
+	</body>
+
+
+</html>
