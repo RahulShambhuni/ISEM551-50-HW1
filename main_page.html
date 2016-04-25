@@ -2,11 +2,16 @@
 
 <html>
 	<head>
+		
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<style type="text/css">
 		.icons {
 			color: black;
     		font-weight: bold;	
-    		background-color: grey;
     		width: 120px;
     		height: 60px;
     		text-align: center;
@@ -22,9 +27,11 @@
 			color: #FFFFFF;
 		}
 		#offers {
+		
 			left: 10%;
 			position: relative;
-
+			
+			
 		}
 		#electronics {
 			left: 20%;
@@ -88,7 +95,12 @@
 				<td>
 					<table width="100%">
 						<tr align="right">
-							<td>LoginId : <input type="text" name="username" value="Mickey"></td>
+							<td>
+										
+							LoginId : <input type="text" name="username" value="Mickey">
+		
+							
+							</td>
 						</tr>
 						<tr align="right">
 							<td>Password : <input type="password" name="password" value="Mouse"></td>
@@ -104,28 +116,28 @@
 		<br/><br/><br/><br/>
 		<div width="100%" style="overflow : hidden">
 			<a href="offers.html">
-				<div class="icons" id = "offers">
-					<p>Offers</p>
+				<div class= "icons" class="container"  id = "offers">
+					<button type="button" class="btn btn-default">Offers</button>
 				</div>
 			</a>
 			<a href="electronics.html">
-				<div class="icons" id="electronics">
-					<p>Electronics</p>
+				<div class="icons" class="container" id="electronics">
+					 <button type="button" class="btn btn-primary">Electronics</button>
 				</div>
 			</a>
 			<a href="fashions_and_lifes.html">
-				<div class="icons" id="fashions_and_lifes">
-					<p>Fashions and Lifes</p>
+				<div class="icons"  class="container" id="fashions_and_lifes">
+					<button type="button" class="btn btn-success">Fashions and Life</button>
 				</div>
 			</a>
 			<a href="books_and_music.html">
-				<div class="icons" id="books_and_music">
-					<p>Books and Music</p>
+				<div class="icons" class="container" id="books_and_music">
+					<button type="button" class="danger">Books and Music</button>
 				</div>
 			</a>
 			<a href="trending_now.html">
-				<div class="icons" id="trending_now">
-					<p>Trending Now</p>
+				<div class="icons" class="container" id="trending_now">
+				<button type="button" class="btn btn-warning">Trending Now</button>
 				</div>
 			</a>
 		</div>
